@@ -6,7 +6,7 @@ exports.HomePage = class HomePage {
   }
 
   async navigate() {
-    await this.page.goto('https://www.cookunity.com');
+    await this.page.goto('/');
   }
 
   async enterZip(zip = '10001', buttonText = 'Order Now') {
