@@ -5,6 +5,7 @@ module.exports = defineConfig({
   timeout: 60000,
   retries: 1,
   use: {
+    baseURL: 'https://www.cookunity.com',
     headless: false,
     viewport: { width: 1024, height: 768 },
     screenshot: 'only-on-failure',
