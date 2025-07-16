@@ -96,7 +96,7 @@ HTTP status 200
 
 Note: For production or real-world testing, store tokens securely in a .env file.
 
-Considerations:
+## Considerations:
 
 UI Tests:
 It doesn't seem to be working if you run it for testing.
