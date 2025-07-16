@@ -1,4 +1,4 @@
-exports.HomePage = class HomePage {
+class HomePage {
   constructor(page) {
     this.page = page;
     this.container = page.getByTestId('hero-vertical-slider-text-column');
@@ -16,4 +16,6 @@ exports.HomePage = class HomePage {
     const submitBtn = this.container.getByRole('button', { name: buttonText });
     await submitBtn.click();
   }
-};
+}
+
+module.exports = { HomePage };

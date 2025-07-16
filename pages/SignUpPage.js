@@ -1,4 +1,4 @@
-exports.SignUpPage = class SignUpPage {
+class SignUpPage {
   constructor(page) {
     this.page = page;
     this.usingEmail = page.getByTestId('login-form');
@@ -22,3 +22,5 @@ exports.SignUpPage = class SignUpPage {
     await this.continueBtn.click();
   }
 };
+
+module.exports = { SignUpPage };

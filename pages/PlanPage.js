@@ -1,4 +1,4 @@
-exports.PlanPage = class PlanPage {
+class PlanPage {
   constructor(page) {
     this.page = page;
     this.sixMealsPlan = page.getByTestId('plan-select-6-toggle');
@@ -9,4 +9,6 @@ exports.PlanPage = class PlanPage {
     await this.sixMealsPlan.click();
     await this.continueButton.click();
   }
-};
+}
+
+module.exports = { PlanPage };
