@@ -7,8 +7,11 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:api": "npx playwright test tests/api",
+    "test:ui": "npx playwright test",
+    "show:report": "npx playwright show-report"
   },
+  "type": "commonjs",
   "keywords": [],
   "author": "",
   "license": "ISC",
